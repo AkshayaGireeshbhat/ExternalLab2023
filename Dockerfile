@@ -1,3 +1,5 @@
 FROM ubuntu:latest 
-RUN apt-get install php-7.0
+RUN apt-get update -y
+RUN apt-get install php -y
 ADD . /var/www/html
+EXPOSE 80
